@@ -8,7 +8,7 @@ import time
 
 cap = cv2.VideoCapture(0)  # For Video
 
-model = YOLO("/home/zeus/Área de Trabalho/TCC/yolov8_pose/runs/pose/train4/weights/best.pt")
+model = YOLO("/home/zeus/Área de Trabalho/TCC/yolov8_pose/runs/pose/train/weights/best.pt")
 
 classNames = ["fall", "jump","s_wall","sitting", "standing", "walking"] #include all the class names
 
