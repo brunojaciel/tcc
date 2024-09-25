@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/yolov8_msgs/yolov8_msgs.egg-info/PKG-INFO
+../../build/yolov8_msgs/yolov8_msgs.egg-info/SOURCES.txt
+../../build/yolov8_msgs/yolov8_msgs.egg-info/dependency_links.txt
+../../build/yolov8_msgs/yolov8_msgs.egg-info/entry_points.txt
+../../build/yolov8_msgs/yolov8_msgs.egg-info/requires.txt
+../../build/yolov8_msgs/yolov8_msgs.egg-info/top_level.txt
+../../build/yolov8_msgs/yolov8_msgs.egg-info/zip-safe
+resource/yolov8_msgs
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+yolov8_msgs/__init__.py

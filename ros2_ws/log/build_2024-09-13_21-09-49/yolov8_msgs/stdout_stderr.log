@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/yolov8_msgs/yolov8_msgs.egg-info
+writing ../../build/yolov8_msgs/yolov8_msgs.egg-info/PKG-INFO
+writing dependency_links to ../../build/yolov8_msgs/yolov8_msgs.egg-info/dependency_links.txt
+writing entry points to ../../build/yolov8_msgs/yolov8_msgs.egg-info/entry_points.txt
+writing requirements to ../../build/yolov8_msgs/yolov8_msgs.egg-info/requires.txt
+writing top-level names to ../../build/yolov8_msgs/yolov8_msgs.egg-info/top_level.txt
+writing manifest file '../../build/yolov8_msgs/yolov8_msgs.egg-info/SOURCES.txt'
+reading manifest file '../../build/yolov8_msgs/yolov8_msgs.egg-info/SOURCES.txt'
+writing manifest file '../../build/yolov8_msgs/yolov8_msgs.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/zeus/ros2_ws/build/yolov8_msgs/build
+creating /home/zeus/ros2_ws/build/yolov8_msgs/build/lib
+creating /home/zeus/ros2_ws/build/yolov8_msgs/build/lib/yolov8_msgs
+copying yolov8_msgs/__init__.py -> /home/zeus/ros2_ws/build/yolov8_msgs/build/lib/yolov8_msgs
+running install
+running install_lib
+creating /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs
+copying /home/zeus/ros2_ws/build/yolov8_msgs/build/lib/yolov8_msgs/__init__.py -> /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs
+byte-compiling /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/zeus/ros2_ws/install/yolov8_msgs/share/ament_index
+creating /home/zeus/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index
+creating /home/zeus/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/packages
+copying resource/yolov8_msgs -> /home/zeus/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/packages
+copying package.xml -> /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs
+running install_egg_info
+Copying ../../build/yolov8_msgs/yolov8_msgs.egg-info to /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/zeus/ros2_ws/build/yolov8_msgs/install.log'

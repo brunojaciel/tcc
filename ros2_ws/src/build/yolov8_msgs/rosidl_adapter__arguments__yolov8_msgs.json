@@ -1,0 +1,7 @@
+{
+  "package_name": "yolov8_msgs",
+  "non_idl_tuples": [
+    "/home/zeus/ros2_ws/src/yolov8_msgs:msg/InferenceResult.msg",
+    "/home/zeus/ros2_ws/src/yolov8_msgs:msg/Yolov8Inference.msg"
+  ]
+}

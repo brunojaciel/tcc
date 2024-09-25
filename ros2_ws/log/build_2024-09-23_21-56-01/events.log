@@ -1,0 +1,366 @@
+[0.000000] (-) TimerEvent: {}
+[0.000625] (my_robot_yolo) JobQueued: {'identifier': 'my_robot_yolo', 'dependencies': OrderedDict()}
+[0.000677] (yolov8_msgs) JobQueued: {'identifier': 'yolov8_msgs', 'dependencies': OrderedDict()}
+[0.000710] (my_robot_yolo) JobStarted: {'identifier': 'my_robot_yolo'}
+[0.010916] (yolov8_msgs) JobStarted: {'identifier': 'yolov8_msgs'}
+[0.099201] (-) TimerEvent: {}
+[0.199520] (-) TimerEvent: {}
+[0.299838] (-) TimerEvent: {}
+[0.400170] (-) TimerEvent: {}
+[0.463747] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'cmake'}
+[0.465474] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'build'}
+[0.465686] (yolov8_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zeus/ros2_ws/build/yolov8_msgs', '--', '-j12', '-l12'], 'cwd': '/home/zeus/ros2_ws/build/yolov8_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'pt_BR:pt:en'), ('USER', 'zeus'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zeus/ros2_ws/install/yolov8_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/zeus'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1928'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=08bf4cfa4834b1a61328285666f1f2df'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/zeus/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeus'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/zeus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeus-Nitro-AN515-52:@/tmp/.ICE-unix/1928,unix/zeus-Nitro-AN515-52:/tmp/.ICE-unix/1928'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6d9176c6_ad9a_4b85_9d1d_7020ee366f2f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.168'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zeus/ros2_ws/install/yolov8_msgs:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeus/ros2_ws/build/yolov8_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=08bf4cfa4834b1a61328285666f1f2df'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages:/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zeus/ros2_ws/install/yolov8_msgs:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron')]), 'shell': False}
+[0.500310] (-) TimerEvent: {}
+[0.507915] (yolov8_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.600448] (-) TimerEvent: {}
+[0.700772] (-) TimerEvent: {}
+[0.727493] (yolov8_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.0.1 (/opt/ros/iron/share/std_msgs/cmake)\n'}
+[0.769843] (yolov8_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[0.784536] (yolov8_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[0.800889] (-) TimerEvent: {}
+[0.806592] (yolov8_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.835227] (yolov8_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901030] (-) TimerEvent: {}
+[0.928456] (yolov8_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)\n'}
+[0.942294] (yolov8_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)\n'}
+[0.996909] (my_robot_yolo) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_robot_yolo', 'build', '--build-base', '/home/zeus/ros2_ws/build/my_robot_yolo/build', 'install', '--record', '/home/zeus/ros2_ws/build/my_robot_yolo/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/zeus/ros2_ws/src/my_robot_yolo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'pt_BR:pt:en', 'USER': 'zeus', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/zeus/ros2_ws/install/yolov8_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib', 'HOME': '/home/zeus', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1928', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=08bf4cfa4834b1a61328285666f1f2df', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/zeus/ros2_ws/install', 'ROS_DISTRO': 'iron', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'zeus', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'zeus', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/iron/bin:/home/zeus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/zeus-Nitro-AN515-52:@/tmp/.ICE-unix/1928,unix/zeus-Nitro-AN515-52:/tmp/.ICE-unix/1928', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6d9176c6_ad9a_4b85_9d1d_7020ee366f2f', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'pt_BR.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.168', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/zeus/ros2_ws/install/yolov8_msgs:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/zeus/ros2_ws/build/my_robot_yolo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=08bf4cfa4834b1a61328285666f1f2df', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/zeus/ros2_ws/build/my_robot_yolo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages:/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages:/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/zeus/ros2_ws/install/yolov8_msgs'}, 'shell': False}
+[1.001116] (-) TimerEvent: {}
+[1.101418] (-) TimerEvent: {}
+[1.201740] (-) TimerEvent: {}
+[1.302038] (-) TimerEvent: {}
+[1.385638] (my_robot_yolo) StdoutLine: {'line': b'running egg_info\n'}
+[1.386631] (my_robot_yolo) StdoutLine: {'line': b'writing ../../build/my_robot_yolo/my_robot_yolo.egg-info/PKG-INFO\n'}
+[1.386910] (my_robot_yolo) StdoutLine: {'line': b'writing dependency_links to ../../build/my_robot_yolo/my_robot_yolo.egg-info/dependency_links.txt\n'}
+[1.387262] (my_robot_yolo) StdoutLine: {'line': b'writing entry points to ../../build/my_robot_yolo/my_robot_yolo.egg-info/entry_points.txt\n'}
+[1.387581] (my_robot_yolo) StdoutLine: {'line': b'writing requirements to ../../build/my_robot_yolo/my_robot_yolo.egg-info/requires.txt\n'}
+[1.387807] (my_robot_yolo) StdoutLine: {'line': b'writing top-level names to ../../build/my_robot_yolo/my_robot_yolo.egg-info/top_level.txt\n'}
+[1.389877] (my_robot_yolo) StdoutLine: {'line': b"reading manifest file '../../build/my_robot_yolo/my_robot_yolo.egg-info/SOURCES.txt'\n"}
+[1.391225] (my_robot_yolo) StdoutLine: {'line': b"writing manifest file '../../build/my_robot_yolo/my_robot_yolo.egg-info/SOURCES.txt'\n"}
+[1.391486] (my_robot_yolo) StdoutLine: {'line': b'running build\n'}
+[1.391621] (my_robot_yolo) StdoutLine: {'line': b'running build_py\n'}
+[1.391995] (my_robot_yolo) StdoutLine: {'line': b'copying my_robot_yolo/yolov8_no.py -> /home/zeus/ros2_ws/build/my_robot_yolo/build/lib/my_robot_yolo\n'}
+[1.392460] (my_robot_yolo) StdoutLine: {'line': b'running install\n'}
+[1.392878] (my_robot_yolo) StdoutLine: {'line': b'running install_lib\n'}
+[1.394102] (my_robot_yolo) StdoutLine: {'line': b'copying /home/zeus/ros2_ws/build/my_robot_yolo/build/lib/my_robot_yolo/yolov8_no.py -> /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo\n'}
+[1.394907] (my_robot_yolo) StdoutLine: {'line': b'byte-compiling /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo/yolov8_no.py to yolov8_no.cpython-310.pyc\n'}
+[1.397400] (my_robot_yolo) StdoutLine: {'line': b'running install_data\n'}
+[1.397699] (my_robot_yolo) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.399978] (my_robot_yolo) StdoutLine: {'line': b"removing '/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.400481] (my_robot_yolo) StdoutLine: {'line': b'Copying ../../build/my_robot_yolo/my_robot_yolo.egg-info to /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo-0.0.0-py3.10.egg-info\n'}
+[1.401813] (my_robot_yolo) StdoutLine: {'line': b'running install_scripts\n'}
+[1.402102] (-) TimerEvent: {}
+[1.431283] (my_robot_yolo) StdoutLine: {'line': b'Installing camera_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo\n'}
+[1.431585] (my_robot_yolo) StdoutLine: {'line': b'Installing debug_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo\n'}
+[1.431836] (my_robot_yolo) StdoutLine: {'line': b'Installing yolov8_apont script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo\n'}
+[1.431991] (my_robot_yolo) StdoutLine: {'line': b'Installing yolov8_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo\n'}
+[1.432297] (my_robot_yolo) StdoutLine: {'line': b"writing list of installed files to '/home/zeus/ros2_ws/build/my_robot_yolo/install.log'\n"}
+[1.452690] (yolov8_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)\n'}
+[1.463973] (my_robot_yolo) CommandEnded: {'returncode': 0}
+[1.478456] (my_robot_yolo) JobEnded: {'identifier': 'my_robot_yolo', 'rc': 0}
+[1.502252] (-) TimerEvent: {}
+[1.602573] (-) TimerEvent: {}
+[1.702886] (-) TimerEvent: {}
+[1.803214] (-) TimerEvent: {}
+[1.903532] (-) TimerEvent: {}
+[2.003839] (-) TimerEvent: {}
+[2.004644] (yolov8_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.103979] (-) TimerEvent: {}
+[2.204289] (-) TimerEvent: {}
+[2.220267] (yolov8_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.254663] (yolov8_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)\n'}
+[2.288778] (yolov8_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.288983] (yolov8_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.289095] (yolov8_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.304409] (-) TimerEvent: {}
+[2.329141] (yolov8_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[2.343394] (yolov8_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.345688] (yolov8_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.346909] (yolov8_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.349457] (yolov8_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.404562] (-) TimerEvent: {}
+[2.406752] (yolov8_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.412037] (yolov8_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/zeus/ros2_ws/build/yolov8_msgs\n'}
+[2.462915] (yolov8_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.477684] (yolov8_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_yolov8_msgs\n'}
+[2.504696] (-) TimerEvent: {}
+[2.605006] (-) TimerEvent: {}
+[2.705327] (-) TimerEvent: {}
+[2.790071] (yolov8_msgs) StdoutLine: {'line': b'[  2%] Built target yolov8_msgs__rosidl_generator_type_description\n'}
+[2.805467] (-) TimerEvent: {}
+[2.805748] (yolov8_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.820708] (yolov8_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.871071] (yolov8_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.872140] (yolov8_msgs) StdoutLine: {'line': b'writing yolov8_msgs.egg-info/PKG-INFO\n'}
+[2.872459] (yolov8_msgs) StdoutLine: {'line': b'writing dependency_links to yolov8_msgs.egg-info/dependency_links.txt\n'}
+[2.872771] (yolov8_msgs) StdoutLine: {'line': b'writing top-level names to yolov8_msgs.egg-info/top_level.txt\n'}
+[2.876151] (yolov8_msgs) StdoutLine: {'line': b"reading manifest file 'yolov8_msgs.egg-info/SOURCES.txt'\n"}
+[2.877007] (yolov8_msgs) StdoutLine: {'line': b"writing manifest file 'yolov8_msgs.egg-info/SOURCES.txt'\n"}
+[2.905582] (-) TimerEvent: {}
+[2.913683] (yolov8_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_yolov8_msgs_egg\n'}
+[3.005696] (-) TimerEvent: {}
+[3.106035] (-) TimerEvent: {}
+[3.206355] (-) TimerEvent: {}
+[3.261711] (yolov8_msgs) StdoutLine: {'line': b'[  6%] Built target yolov8_msgs__cpp\n'}
+[3.306487] (-) TimerEvent: {}
+[3.329468] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_generator_c\x1b[0m\n'}
+[3.348434] (yolov8_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__description.c.o\x1b[0m\n'}
+[3.348831] (yolov8_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__functions.c.o\x1b[0m\n'}
+[3.349151] (yolov8_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/inference_result__type_support.c.o\x1b[0m\n'}
+[3.349938] (yolov8_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__functions.c.o\x1b[0m\n'}
+[3.350217] (yolov8_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__description.c.o\x1b[0m\n'}
+[3.350594] (yolov8_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.o\x1b[0m\n'}
+[3.406609] (-) TimerEvent: {}
+[3.432566] (yolov8_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libyolov8_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.496748] (yolov8_msgs) StdoutLine: {'line': b'[ 22%] Built target yolov8_msgs__rosidl_generator_c\n'}
+[3.506731] (-) TimerEvent: {}
+[3.511678] (yolov8_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.512170] (yolov8_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.512552] (yolov8_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.512872] (yolov8_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.513174] (yolov8_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.513455] (yolov8_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.606846] (-) TimerEvent: {}
+[3.707232] (-) TimerEvent: {}
+[3.807584] (-) TimerEvent: {}
+[3.886475] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[3.886839] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.908037] (-) TimerEvent: {}
+[3.909564] (yolov8_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/inference_result__type_support.cpp.o\x1b[0m\n'}
+[3.909854] (yolov8_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o\x1b[0m\n'}
+[3.915722] (yolov8_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/inference_result__type_support.cpp.o\x1b[0m\n'}
+[3.916075] (yolov8_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/yolov8_inference__type_support.cpp.o\x1b[0m\n'}
+[3.929309] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.937961] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.961346] (yolov8_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/inference_result__type_support.cpp.o\x1b[0m\n'}
+[3.961653] (yolov8_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp.o\x1b[0m\n'}
+[3.967116] (yolov8_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/inference_result__type_support.c.o\x1b[0m\n'}
+[3.967526] (yolov8_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/yolov8_inference__type_support.c.o\x1b[0m\n'}
+[3.971043] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[3.998121] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.000902] (yolov8_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/inference_result__type_support.cpp.o\x1b[0m\n'}
+[4.002773] (yolov8_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/yolov8_inference__type_support.cpp.o\x1b[0m\n'}
+[4.008153] (-) TimerEvent: {}
+[4.027439] (yolov8_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.027809] (yolov8_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/inference_result__type_support_c.cpp.o\x1b[0m\n'}
+[4.028085] (yolov8_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/yolov8_inference__type_support_c.cpp.o\x1b[0m\n'}
+[4.066066] (yolov8_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libyolov8_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.108284] (-) TimerEvent: {}
+[4.130323] (yolov8_msgs) StdoutLine: {'line': b'[ 68%] Built target yolov8_msgs__rosidl_typesupport_c\n'}
+[4.136024] (yolov8_msgs) StdoutLine: {'line': b'[ 68%] Built target yolov8_msgs__rosidl_typesupport_introspection_c\n'}
+[4.208412] (-) TimerEvent: {}
+[4.308833] (-) TimerEvent: {}
+[4.409277] (-) TimerEvent: {}
+[4.509682] (-) TimerEvent: {}
+[4.592388] (yolov8_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.609793] (-) TimerEvent: {}
+[4.662149] (yolov8_msgs) StdoutLine: {'line': b'[ 70%] Built target yolov8_msgs__rosidl_typesupport_cpp\n'}
+[4.709923] (-) TimerEvent: {}
+[4.750487] (yolov8_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.807867] (yolov8_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.810016] (-) TimerEvent: {}
+[4.878212] (yolov8_msgs) StdoutLine: {'line': b'[ 75%] Built target yolov8_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.910145] (-) TimerEvent: {}
+[4.930816] (yolov8_msgs) StdoutLine: {'line': b'[ 75%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.010267] (-) TimerEvent: {}
+[5.086918] (yolov8_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.110401] (-) TimerEvent: {}
+[5.200046] (yolov8_msgs) StdoutLine: {'line': b'[ 77%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.210527] (-) TimerEvent: {}
+[5.230096] (yolov8_msgs) StdoutLine: {'line': b'[ 77%] Built target yolov8_msgs\n'}
+[5.261305] (yolov8_msgs) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.310652] (-) TimerEvent: {}
+[5.411002] (-) TimerEvent: {}
+[5.511339] (-) TimerEvent: {}
+[5.611675] (-) TimerEvent: {}
+[5.712001] (-) TimerEvent: {}
+[5.812336] (-) TimerEvent: {}
+[5.849888] (yolov8_msgs) StdoutLine: {'line': b'[ 79%] Built target yolov8_msgs__py\n'}
+[5.865783] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_generator_py\x1b[0m\n'}
+[5.885780] (yolov8_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolov8_msgs/msg/_inference_result_s.c.o\x1b[0m\n'}
+[5.886969] (yolov8_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolov8_msgs/msg/_yolov8_inference_s.c.o\x1b[0m\n'}
+[5.912470] (-) TimerEvent: {}
+[6.012792] (-) TimerEvent: {}
+[6.066044] (yolov8_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolov8_msgs/libyolov8_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[6.112935] (-) TimerEvent: {}
+[6.131662] (yolov8_msgs) StdoutLine: {'line': b'[ 86%] Built target yolov8_msgs__rosidl_generator_py\n'}
+[6.147181] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[6.147384] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[6.147629] (yolov8_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov8_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[6.166491] (yolov8_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.166711] (yolov8_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.166822] (yolov8_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.213027] (-) TimerEvent: {}
+[6.313400] (-) TimerEvent: {}
+[6.334744] (yolov8_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.335081] (yolov8_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.335314] (yolov8_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.396368] (yolov8_msgs) StdoutLine: {'line': b'[100%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.396796] (yolov8_msgs) StdoutLine: {'line': b'[100%] Built target yolov8_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[6.397099] (yolov8_msgs) StdoutLine: {'line': b'[100%] Built target yolov8_msgs__rosidl_typesupport_c__pyext\n'}
+[6.413542] (-) TimerEvent: {}
+[6.414558] (yolov8_msgs) CommandEnded: {'returncode': 0}
+[6.513655] (-) TimerEvent: {}
+[6.557270] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'install'}
+[6.569966] (yolov8_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zeus/ros2_ws/build/yolov8_msgs'], 'cwd': '/home/zeus/ros2_ws/build/yolov8_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'pt_BR:pt:en'), ('USER', 'zeus'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zeus/ros2_ws/install/yolov8_msgs/lib:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/zeus'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1928'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=08bf4cfa4834b1a61328285666f1f2df'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/zeus/ros2_ws/install'), ('ROS_DISTRO', 'iron'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zeus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zeus'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/iron/bin:/home/zeus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/zeus-Nitro-AN515-52:@/tmp/.ICE-unix/1928,unix/zeus-Nitro-AN515-52:/tmp/.ICE-unix/1928'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6d9176c6_ad9a_4b85_9d1d_7020ee366f2f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'pt_BR.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.168'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zeus/ros2_ws/install/yolov8_msgs:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zeus/ros2_ws/build/yolov8_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=08bf4cfa4834b1a61328285666f1f2df'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages:/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zeus/ros2_ws/install/yolov8_msgs:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron')]), 'shell': False}
+[6.582576] (yolov8_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.582847] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs\n'}
+[6.582965] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/InferenceResult.json\n'}
+[6.583194] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Yolov8Inference.json\n'}
+[6.583525] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs\n'}
+[6.583694] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[6.583807] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[6.583907] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__functions.h\n'}
+[6.584179] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__struct.h\n'}
+[6.584304] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__struct.h\n'}
+[6.584451] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__type_support.h\n'}
+[6.584552] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__type_support.h\n'}
+[6.584682] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__type_support.c\n'}
+[6.584811] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__functions.h\n'}
+[6.584938] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__description.c\n'}
+[6.585198] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__functions.c\n'}
+[6.585406] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__description.c\n'}
+[6.585673] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__type_support.c\n'}
+[6.585866] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__functions.c\n'}
+[6.586111] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/yolov8_inference.h\n'}
+[6.586383] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.586646] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/inference_result.h\n'}
+[6.586764] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.sh\n'}
+[6.586860] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.dsv\n'}
+[6.587016] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_c.so\n'}
+[6.587668] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_c.so" to ""\n'}
+[6.587761] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs\n'}
+[6.587913] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[6.588028] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[6.588170] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_fastrtps_c.h\n'}
+[6.588299] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_fastrtps_c.h\n'}
+[6.588427] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.588544] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.589378] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.589566] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs\n'}
+[6.589702] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[6.589792] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[6.589939] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__traits.hpp\n'}
+[6.590084] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__struct.hpp\n'}
+[6.590169] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__builder.hpp\n'}
+[6.590281] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__traits.hpp\n'}
+[6.590449] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__builder.hpp\n'}
+[6.590711] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__struct.hpp\n'}
+[6.590878] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/yolov8_inference.hpp\n'}
+[6.591118] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/inference_result.hpp\n'}
+[6.591354] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs\n'}
+[6.591500] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[6.591704] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[6.591876] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.592038] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.592136] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/dds_fastrtps\n'}
+[6.592225] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.592409] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.593082] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.593299] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs\n'}
+[6.593450] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[6.593559] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.593741] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[6.593841] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_introspection_c.h\n'}
+[6.593931] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__type_support.c\n'}
+[6.594068] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_introspection_c.h\n'}
+[6.594156] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__type_support.c\n'}
+[6.594384] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so\n'}
+[6.595123] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.595358] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_c.so\n'}
+[6.595983] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_c.so" to ""\n'}
+[6.596255] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs\n'}
+[6.596370] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[6.596594] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[6.596708] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__type_support.cpp\n'}
+[6.596811] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__type_support.cpp\n'}
+[6.596968] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/yolov8_inference__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.597153] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/yolov8_msgs/msg/detail/inference_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.597274] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[6.598018] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.598322] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_cpp.so\n'}
+[6.598996] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[6.599104] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.sh\n'}
+[6.599295] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.dsv\n'}
+[6.599437] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs-1.0.0-py3.10.egg-info\n'}
+[6.599548] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.599694] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.599805] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.599931] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.600163] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs\n'}
+[6.600356] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/__init__.py\n'}
+[6.600499] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.600654] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.600903] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/libyolov8_msgs__rosidl_generator_py.so\n'}
+[6.601232] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.601463] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[6.601721] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.601924] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.602162] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg\n'}
+[6.602340] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg/_yolov8_inference.py\n'}
+[6.602491] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg/__init__.py\n'}
+[6.602635] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg/_yolov8_inference_s.c\n'}
+[6.602849] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg/_inference_result.py\n'}
+[6.603171] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg/_inference_result_s.c\n'}
+[6.613764] (-) TimerEvent: {}
+[6.656606] (yolov8_msgs) StdoutLine: {'line': b"Listing '/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs'...\n"}
+[6.656802] (yolov8_msgs) StdoutLine: {'line': b"Compiling '/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/__init__.py'...\n"}
+[6.656904] (yolov8_msgs) StdoutLine: {'line': b"Listing '/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg'...\n"}
+[6.657022] (yolov8_msgs) StdoutLine: {'line': b"Compiling '/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg/__init__.py'...\n"}
+[6.657134] (yolov8_msgs) StdoutLine: {'line': b"Compiling '/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg/_inference_result.py'...\n"}
+[6.657225] (yolov8_msgs) StdoutLine: {'line': b"Compiling '/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/msg/_yolov8_inference.py'...\n"}
+[6.663320] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.664007] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.664400] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.665024] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.665443] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.666082] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.666421] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_py.so\n'}
+[6.667086] (yolov8_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/zeus/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_py.so" to ""\n'}
+[6.667237] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/InferenceResult.idl\n'}
+[6.667430] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Yolov8Inference.idl\n'}
+[6.667570] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/InferenceResult.msg\n'}
+[6.667789] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Yolov8Inference.msg\n'}
+[6.667949] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs\n'}
+[6.668177] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs\n'}
+[6.668283] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.sh\n'}
+[6.668380] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.dsv\n'}
+[6.668475] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.sh\n'}
+[6.668569] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.dsv\n'}
+[6.668713] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.bash\n'}
+[6.668809] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.sh\n'}
+[6.668903] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.zsh\n'}
+[6.669065] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.dsv\n'}
+[6.669161] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv\n'}
+[6.669254] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/packages/yolov8_msgs\n'}
+[6.669403] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake\n'}
+[6.669494] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.669588] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.669682] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.669776] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake\n'}
+[6.669868] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.670025] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.670164] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.670251] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.670344] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake\n'}
+[6.670435] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.670527] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.670623] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.670716] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[6.670808] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.670939] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport.cmake\n'}
+[6.671105] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.671192] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[6.671277] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.671363] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.671446] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.671530] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.671621] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.671705] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.671788] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig.cmake\n'}
+[6.671872] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig-version.cmake\n'}
+[6.671967] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/zeus/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/package.xml\n'}
+[6.674209] (yolov8_msgs) CommandEnded: {'returncode': 0}
+[6.713901] (-) TimerEvent: {}
+[6.814215] (-) TimerEvent: {}
+[6.847030] (yolov8_msgs) JobEnded: {'identifier': 'yolov8_msgs', 'rc': 0}
+[6.848164] (-) EventReactorShutdown: {}

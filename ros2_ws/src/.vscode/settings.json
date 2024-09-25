@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages",
+        "/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages",
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/zeus/ros2_ws/install/yolov8_msgs/lib/python3.10/site-packages",
+        "/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages",
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ]
+}

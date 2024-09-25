@@ -1,0 +1,55 @@
+[0.458s] Invoking command in '/home/zeus/ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron /usr/bin/cmake --build /home/zeus/ros2_ws/build/yolov8_msgs -- -j12 -l12
+[0.494s] -- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.713s] -- Found std_msgs: 5.0.1 (/opt/ros/iron/share/std_msgs/cmake)
+[0.754s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.767s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.787s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.813s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.901s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.913s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[1.175s] [31mCMake Error at /opt/ros/iron/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.175s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+[1.175s]   yolov8_msgs --arguments-file
+[1.175s]   /home/zeus/ros2_ws/build/yolov8_msgs/rosidl_adapter__arguments__yolov8_msgs.json
+[1.175s]   --output-dir
+[1.175s]   /home/zeus/ros2_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs
+[1.175s]   --output-file
+[1.176s]   /home/zeus/ros2_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs.idls)
+[1.176s]   returned error code 1:
+[1.176s] 
+[1.176s]   Error processing 'int category' of 'yolov8_msgs/InferenceResult': ''int' is
+[1.176s]   an invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[1.176s] 
+[1.176s]   Traceback (most recent call last):
+[1.176s] 
+[1.176s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[1.176s]       return _run_code(code, main_globals, None,
+[1.177s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[1.177s]       exec(code, run_globals)
+[1.177s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.177s]       sys.exit(main())
+[1.177s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.177s]       abs_idl_file = convert_to_idl(
+[1.177s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.177s]       return convert_msg_to_idl(
+[1.177s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.177s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.178s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/parser.py", line 521, in parse_message_string
+[1.178s]       Type(type_string, context_package_name=pkg_name),
+[1.178s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/parser.py", line 278, in __init__
+[1.178s]       super(Type, self).__init__(
+[1.178s]     File "/opt/ros/iron/lib/python3.10/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[1.178s]       raise InvalidResourceName(
+[1.178s] 
+[1.178s]   rosidl_adapter.parser.InvalidResourceName: 'int' is an invalid message
+[1.178s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.178s] 
+[1.178s] Call Stack (most recent call first):
+[1.179s]   /opt/ros/iron/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.179s]   CMakeLists.txt:22 (rosidl_generate_interfaces)
+[1.179s] 
+[1.179s] [0m
+[1.179s] -- Configuring incomplete, errors occurred!
+[1.179s] See also "/home/zeus/ros2_ws/build/yolov8_msgs/CMakeFiles/CMakeOutput.log".
+[1.183s] gmake: *** [Makefile:1085: cmake_check_build_system] Erro 1
+[1.186s] Invoked command in '/home/zeus/ros2_ws/build/yolov8_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron /usr/bin/cmake --build /home/zeus/ros2_ws/build/yolov8_msgs -- -j12 -l12

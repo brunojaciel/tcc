@@ -1,0 +1,4 @@
+Invoking command in '/home/zeus/ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron /usr/bin/cmake --build /home/zeus/ros2_ws/build/yolov8_msgs -- -j12 -l12
+Invoked command in '/home/zeus/ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron /usr/bin/cmake --build /home/zeus/ros2_ws/build/yolov8_msgs -- -j12 -l12
+Invoking command in '/home/zeus/ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron /usr/bin/cmake --install /home/zeus/ros2_ws/build/yolov8_msgs
+Invoked command in '/home/zeus/ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/zeus/ros2_ws/install/my_robot_yolo:/opt/ros/iron /usr/bin/cmake --install /home/zeus/ros2_ws/build/yolov8_msgs

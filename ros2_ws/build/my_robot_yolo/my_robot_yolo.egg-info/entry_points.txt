@@ -1,0 +1,6 @@
+[console_scripts]
+camera_no = my_robot_yolo.camera:main
+debug_no = my_robot_yolo.debug_no:main
+yolov8_apont = my_robot_yolo.yolov8_apont:main
+yolov8_no = my_robot_yolo.yolov8_no:main
+

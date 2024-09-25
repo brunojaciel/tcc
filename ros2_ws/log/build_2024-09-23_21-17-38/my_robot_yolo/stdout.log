@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/my_robot_yolo/my_robot_yolo.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_robot_yolo/my_robot_yolo.egg-info/dependency_links.txt
+writing entry points to ../../build/my_robot_yolo/my_robot_yolo.egg-info/entry_points.txt
+writing requirements to ../../build/my_robot_yolo/my_robot_yolo.egg-info/requires.txt
+writing top-level names to ../../build/my_robot_yolo/my_robot_yolo.egg-info/top_level.txt
+reading manifest file '../../build/my_robot_yolo/my_robot_yolo.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_robot_yolo/my_robot_yolo.egg-info/SOURCES.txt'
+running build
+running build_py
+copying my_robot_yolo/yolov8_no.py -> /home/zeus/ros2_ws/build/my_robot_yolo/build/lib/my_robot_yolo
+running install
+running install_lib
+copying /home/zeus/ros2_ws/build/my_robot_yolo/build/lib/my_robot_yolo/yolov8_no.py -> /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo
+byte-compiling /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo/yolov8_no.py to yolov8_no.cpython-310.pyc
+running install_data
+copying package.xml -> /home/zeus/ros2_ws/install/my_robot_yolo/share/my_robot_yolo
+running install_egg_info
+removing '/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/my_robot_yolo/my_robot_yolo.egg-info to /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo-0.0.0-py3.10.egg-info
+running install_scripts
+Installing camera_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo
+Installing debug_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo
+Installing yolov8_apont script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo
+Installing yolov8_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo
+writing list of installed files to '/home/zeus/ros2_ws/build/my_robot_yolo/install.log'

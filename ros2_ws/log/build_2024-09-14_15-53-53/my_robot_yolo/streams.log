@@ -1,0 +1,27 @@
+[0.593s] Invoking command in '/home/zeus/ros2_ws/src/my_robot_yolo': PYTHONPATH=/home/zeus/ros2_ws/build/my_robot_yolo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_yolo build --build-base /home/zeus/ros2_ws/build/my_robot_yolo/build install --record /home/zeus/ros2_ws/build/my_robot_yolo/install.log --single-version-externally-managed install_data
+[0.814s] running egg_info
+[0.814s] writing ../../build/my_robot_yolo/my_robot_yolo.egg-info/PKG-INFO
+[0.814s] writing dependency_links to ../../build/my_robot_yolo/my_robot_yolo.egg-info/dependency_links.txt
+[0.815s] writing entry points to ../../build/my_robot_yolo/my_robot_yolo.egg-info/entry_points.txt
+[0.815s] writing requirements to ../../build/my_robot_yolo/my_robot_yolo.egg-info/requires.txt
+[0.815s] writing top-level names to ../../build/my_robot_yolo/my_robot_yolo.egg-info/top_level.txt
+[0.816s] reading manifest file '../../build/my_robot_yolo/my_robot_yolo.egg-info/SOURCES.txt'
+[0.817s] writing manifest file '../../build/my_robot_yolo/my_robot_yolo.egg-info/SOURCES.txt'
+[0.817s] running build
+[0.817s] running build_py
+[0.817s] copying my_robot_yolo/yolov8_no.py -> /home/zeus/ros2_ws/build/my_robot_yolo/build/lib/my_robot_yolo
+[0.818s] running install
+[0.818s] running install_lib
+[0.819s] copying /home/zeus/ros2_ws/build/my_robot_yolo/build/lib/my_robot_yolo/yolov8_no.py -> /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo
+[0.819s] byte-compiling /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo/yolov8_no.py to yolov8_no.cpython-310.pyc
+[0.820s] running install_data
+[0.820s] running install_egg_info
+[0.822s] removing '/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo-0.0.0-py3.10.egg-info' (and everything under it)
+[0.822s] Copying ../../build/my_robot_yolo/my_robot_yolo.egg-info to /home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages/my_robot_yolo-0.0.0-py3.10.egg-info
+[0.823s] running install_scripts
+[0.840s] Installing camera_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo
+[0.840s] Installing debug_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo
+[0.840s] Installing yolov8_apont script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo
+[0.841s] Installing yolov8_no script to /home/zeus/ros2_ws/install/my_robot_yolo/lib/my_robot_yolo
+[0.841s] writing list of installed files to '/home/zeus/ros2_ws/build/my_robot_yolo/install.log'
+[0.867s] Invoked command in '/home/zeus/ros2_ws/src/my_robot_yolo' returned '0': PYTHONPATH=/home/zeus/ros2_ws/build/my_robot_yolo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/zeus/ros2_ws/install/my_robot_yolo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_yolo build --build-base /home/zeus/ros2_ws/build/my_robot_yolo/build install --record /home/zeus/ros2_ws/build/my_robot_yolo/install.log --single-version-externally-managed install_data
