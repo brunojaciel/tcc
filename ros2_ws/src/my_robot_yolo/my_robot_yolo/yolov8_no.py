@@ -40,7 +40,7 @@ class YoloV8_Apont(Node):
         super().__init__("yolov8_apont")
 
         self.model = YOLO('yolov8n-pose.pt')
-        self.model_obj = YOLO('yolov8n.pt')
+        self.model_obj = YOLO('/home/zeus/ros2_ws/src/my_robot_yolo/my_robot_yolo/runs/detect_bot/train/weights/last.pt')
         self.active_keypoints = [6, 8, 10]
         self.scale = 1/2
         self.yolov8_inference = Yolov8Inference()
@@ -87,29 +87,34 @@ class YoloV8_Apont(Node):
                             for box in boxes:
                                 pt1 = person_keypoints[self.active_keypoints[1]].astype(int)
                                 pt2 = person_keypoints[self.active_keypoints[2]].astype(int)
-                                new_point_a = calculate_new_point(pt1, pt2, factor=2.0)
-                                new_point_b = calculate_new_point(pt1, pt2, factor=4.0)
-                                new_point_c = calculate_new_point(pt1, pt2, factor=8.0)
-                                x1, y1, x2, y2 = box.xyxy[0]
+                                factor = 1.0
 
-                                if ((x1 <= new_point_a[0] <= x2) and (y1 <= new_point_a[1] <= y2)) or ((x1 <= new_point_b[0] <= x2) and (y1 <= new_point_b[1] <= y2)) or ((x1 <= new_point_c[0] <= x2) and (y1 <= new_point_c[1] <= y2)):
-                                    self.inference_result = InferenceResult()
-                                    b = box.xyxy[0].to('cpu').detach().numpy().copy()  # get box coordinates in (top, left, bottom, right) format
-                                    c = box.cls
-                                    self.inference_result.class_name = self.model_obj.names[int(c)]
-                                    self.inference_result.top = int(b[0])
-                                    self.inference_result.left = int(b[1])
-                                    self.inference_result.bottom = int(b[2])
-                                    self.inference_result.right = int(b[3])
-
-                                    if ((x1 <= new_point_a[0] <= x2) and (y1 <= new_point_a[1] <= y2)):
-                                        self.inference_result.category = 2
-                                    elif ((x1 <= new_point_b[0] <= x2) and (y1 <= new_point_b[1] <= y2)):
-                                        self.inference_result.category = 3
-                                    else:
-                                        self.inference_result.category = 4
-                                    self.yolov8_inference.yolov8_inference.append(self.inference_result)
-
+                                # Loop to find the desired condition
+                                while factor <= 8.0:  # Maximum factor limit, can be adjusted as needed
+                                    new_point = calculate_new_point(pt1, pt2, factor=factor)
+                                    x1, y1, x2, y2 = box.xyxy[0]
+                            
+                                    if x1 <= new_point[0] <= x2 and y1 <= new_point[1] <= y2:
+                                        self.inference_result = InferenceResult()
+                                        b = box.xyxy[0].to('cpu').detach().numpy().copy()  # get box coordinates in (top, left, bottom, right) format
+                                        c = box.cls
+                                        self.inference_result.class_name = self.model_obj.names[int(c)]
+                                        self.inference_result.top = int(b[0])
+                                        self.inference_result.left = int(b[1])
+                                        self.inference_result.bottom = int(b[2])
+                                        self.inference_result.right = int(b[3])
+                            
+                                        if factor == 2.0:
+                                            self.inference_result.category = 2
+                                        elif factor == 4.0:
+                                            self.inference_result.category = 3
+                                        else:
+                                            self.inference_result.category = 4
+                            
+                                        self.yolov8_inference.yolov8_inference.append(self.inference_result)
+                                        break  # End the loop when the condition is met
+                                    
+                                    factor += 1.0  # Increase the factor
                         self.yolov8_pub.publish(self.yolov8_inference)
                         self.yolov8_inference.yolov8_inference.clear()
 
@@ -172,7 +177,7 @@ class YoloV8(Node):
         super().__init__("yolov8")
 
         self.model = YOLO('/home/zeus/ros2_ws/src/my_robot_yolo/my_robot_yolo/runs/pose/train/weights/best.pt')
-        self.model_obj = YOLO('yolov8n.pt')
+        self.model_obj = YOLO('/home/zeus/ros2_ws/src/my_robot_yolo/my_robot_yolo/runs/detect_bot/train/weights/last.pt')
         self.active_keypoints = [6, 8, 10]
         self.scale = 1/2
         self.yolov8_inference = Yolov8Inference()
@@ -239,28 +244,34 @@ class YoloV8(Node):
                                     for box in boxes:
                                         pt1 = person_keypoints[self.active_keypoints[1]].astype(int)
                                         pt2 = person_keypoints[self.active_keypoints[2]].astype(int)
-                                        new_point_a = calculate_new_point(pt1, pt2, factor=2.0)
-                                        new_point_b = calculate_new_point(pt1, pt2, factor=4.0)
-                                        new_point_c = calculate_new_point(pt1, pt2, factor=8.0)
-                                        x1, y1, x2, y2 = box.xyxy[0]
+                                        factor = 1.0
 
-                                        if ((x1 <= new_point_a[0] <= x2) and (y1 <= new_point_a[1] <= y2)) or ((x1 <= new_point_b[0] <= x2) and (y1 <= new_point_b[1] <= y2)) or ((x1 <= new_point_c[0] <= x2) and (y1 <= new_point_c[1] <= y2)):
-                                            self.inference_result_point = InferenceResult()
-                                            b = box.xyxy[0].to('cpu').detach().numpy().copy()  # get box coordinates in (top, left, bottom, right) format
-                                            c = box.cls
-                                            self.inference_result_point.class_name = self.model_obj.names[int(c)]
-                                            self.inference_result_point.top = int(b[0])
-                                            self.inference_result_point.left = int(b[1])
-                                            self.inference_result_point.bottom = int(b[2])
-                                            self.inference_result_point.right = int(b[3])
+                                        # Loop to find the desired condition
+                                        while factor <= 8.0:  # Maximum factor limit, can be adjusted as needed
+                                            new_point = calculate_new_point(pt1, pt2, factor=factor)
+                                            x1, y1, x2, y2 = box.xyxy[0]
 
-                                            if ((x1 <= new_point_a[0] <= x2) and (y1 <= new_point_a[1] <= y2)):
-                                                self.inference_result_point.category = 2
-                                            elif ((x1 <= new_point_b[0] <= x2) and (y1 <= new_point_b[1] <= y2)):
-                                                self.inference_result_point.category = 3
-                                            else:
-                                                self.inference_result_point.category = 4
-                                            self.yolov8_inference.yolov8_inference.append(self.inference_result_point)
+                                            if x1 <= new_point[0] <= x2 and y1 <= new_point[1] <= y2:
+                                                self.inference_result = InferenceResult()
+                                                b = box.xyxy[0].to('cpu').detach().numpy().copy()  # get box coordinates in (top, left, bottom, right) format
+                                                c = box.cls
+                                                self.inference_result.class_name = self.model_obj.names[int(c)]
+                                                self.inference_result.top = int(b[0])
+                                                self.inference_result.left = int(b[1])
+                                                self.inference_result.bottom = int(b[2])
+                                                self.inference_result.right = int(b[3])
+
+                                                if factor == 2.0:
+                                                    self.inference_result.category = 2
+                                                elif factor == 4.0:
+                                                    self.inference_result.category = 3
+                                                else:
+                                                    self.inference_result.category = 4
+
+                                                self.yolov8_inference.yolov8_inference.append(self.inference_result)
+                                                break  # End the loop when the condition is met
+                                            
+                                            factor += 1.0  # Increase the factor
     
         self.yolov8_pub.publish(self.yolov8_inference)
         self.yolov8_inference.yolov8_inference.clear()
@@ -269,24 +280,24 @@ class YoloV8(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    #yolo_apont = YoloV8_Apont()
-    #yolo_pose = YoloV8_Pose()
-    yolo = YoloV8()
+    yolo_apont = YoloV8_Apont()
+    yolo_pose = YoloV8_Pose()
+    #yolo = YoloV8()
 
     # Use MultiThreadedExecutor to handle multiple nodes in parallel
     executor = rclpy.executors.MultiThreadedExecutor()
-    #executor.add_node(yolo_apont)
-    #executor.add_node(yolo_pose)
-    executor.add_node(yolo)
+    executor.add_node(yolo_apont)
+    executor.add_node(yolo_pose)
+    #executor.add_node(yolo)
 
     try:
         executor.spin()
     except KeyboardInterrupt:
         pass
     finally:
-        #yolo_apont.destroy_node()
-        #yolo_pose.destroy_node()
-        yolo.destroy_node()
+        yolo_apont.destroy_node()
+        yolo_pose.destroy_node()
+        #yolo.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':

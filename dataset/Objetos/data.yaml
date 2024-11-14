@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 16
+names: ['Canned_drinks', 'Glasses', 'Keys', 'Mobile phone', 'Mouse', 'Pen', 'Wallet', 'Watch', 'bottle', 'cup', 'cylinder', 'drink_box', 'paper', 'remote', 'round ball', 'wire']
+
+roboflow:
+  workspace: jiji-smxnm
+  project: yolov8obb-z6fui
+  version: 8
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/jiji-smxnm/yolov8obb-z6fui/dataset/8

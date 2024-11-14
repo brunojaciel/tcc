@@ -1,7 +1,7 @@
 task: pose
 mode: train
 model: yolov8n-pose.pt
-data: /home/zeus/Área de Trabalho/TCC/yolov8_pose/dataset/data.yaml
+data: /home/zeus/Área de Trabalho/TCC/yolov8_pose/dataset/New_poses/data.yaml
 epochs: 100
 time: null
 patience: 100

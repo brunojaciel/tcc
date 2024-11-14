@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['bottle', 'can', 'cup']
+
+roboflow:
+  workspace: ai-object-detection
+  project: bottles-and-cups-detection-6u8tg
+  version: 24
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ai-object-detection/bottles-and-cups-detection-6u8tg/dataset/24

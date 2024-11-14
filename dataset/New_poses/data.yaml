@@ -1,0 +1,16 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+kpt_shape: [12, 3]
+flip_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+nc: 6
+names: ['fall', 'jump', 's_wall', 'sitting', 'standing', 'walking']
+
+roboflow:
+  workspace: tcc-vzhlp
+  project: jump_fall_combined-58gqt
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/tcc-vzhlp/jump_fall_combined-58gqt/dataset/1
